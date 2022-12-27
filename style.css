@@ -1,0 +1,208 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*::after, *::before {
+    box-sizing: inherit;
+}
+
+/* popup */
+
+.add-new-doc-popup-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    display: none;
+}
+
+.add-new-doc-popup {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-table {
+    border-spacing: 5px 20px;
+}
+
+.popup-table input {
+    border: 1px solid black;
+    padding: 2px 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.popup-add-doc-btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background: #2f55bd;
+    margin-top: 15px;
+}
+
+
+
+
+/* main */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background: #2f55bd;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.add-new-doc {
+    cursor: pointer;
+    border: 1px solid black;
+    background: #2f55bd;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.add-new-doc:hover {
+    opacity: 0.9;
+}
+
+.bottom table {
+    width: 98%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.bottom table tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.td-btns {
+    width: 160px;
+}
+
+.td-btns button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 32px;
+    height: 30px;
+    color: white;
+    background-color: #2f55bd;
+    margin: 0 2px;
+}
+
+.td-btns button:hover {
+    opacity: 0.75;
+}
+
+.td-btns i {
+    font-size: 16px;
+}
+
+.active {
+    color: black !important;
+    background: grey !important;
+    pointer-events: none;
+
+}
+
+.status-color {
+    font-size: 12px;
+    margin-right: 5px;
+    color: green;
+}
+
+.status-color-in {
+    font-size: 12px;
+    margin-right: 5px;
+    color: orange;
+}
+
+
+
+
+/* strona faktura */
+
+.billings-content {
+    margin: 30px;
+}
+
+.bill-text {
+    background: #2f55bd;
+    padding: 1px 5px 0 5px;
+    color: white;
+    border-radius: 0 0 5px 0;
+}
+
+.billings-content table tr td {
+    padding: 0 8px;
+}
+
+.bill-info-left,
+.bill-info-right,
+.bill-info-bottom {
+    border: 1px solid #d4d4d4;
+}
+
+.bill-info-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bill-info-bottom table {
+    border-collapse: collapse; 
+    margin-top: 10px; 
+    width: 95%;
+    margin: 20px;
+}
+
+.bill-info-bottom table tr td {
+    border: 1px solid black;
+}
+
+.bill-info {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+
+
+
+
+.show-popup {
+    display: flex;
+}
